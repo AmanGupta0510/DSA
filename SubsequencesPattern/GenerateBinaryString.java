@@ -1,3 +1,4 @@
+package SubsequencesPattern;
 // Question : Generate all binary strings of N bits
 // Problem link : https://www.geeksforgeeks.org/problems/generate-all-binary-strings/1
 // Platform : GeeksforGeeks
