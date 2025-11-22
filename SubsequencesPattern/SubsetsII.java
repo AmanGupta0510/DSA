@@ -8,7 +8,7 @@ class Solution {
     public List<List<Integer>> subsetsWithDup(int[] nums) {
         Arrays.sort(nums);// we sort the array so that we can easily skip the duplicates and make our result unique without using map or dictionary.
         List<List<Integer>> res = new ArrayList<>();
-        List<Integer> ds = new ArrayList<>();
+        // List<Integer> ds = new ArrayList<>();
         helper(nums,res);
         return res;
         
