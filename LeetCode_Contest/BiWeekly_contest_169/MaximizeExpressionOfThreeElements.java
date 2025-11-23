@@ -2,7 +2,7 @@
 // Problem Link - https://leetcode.com/problems/maximize-expression-of-three-elements/
 // Platform - LeetCode
 
-package LeetCode_Contest;
+package LeetCode_Contest.BiWeekly_contest_169;
 
 class Solution {
     public int maximizeExpressionOfThree(int[] nums) {

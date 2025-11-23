@@ -2,7 +2,7 @@
 // Problem Link - https://leetcode.com/problems/minimum-string-length-after-balanced-removals/
 // Platform - LeetCode
 
-package LeetCode_Contest;
+package LeetCode_Contest.BiWeekly_contest_169;
 import java.util.Stack;
 class Solution {
     public int minLengthAfterRemovals(String s) {
