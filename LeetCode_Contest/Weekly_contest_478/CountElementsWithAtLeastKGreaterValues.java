@@ -1,3 +1,6 @@
+// Question - Count Elements With at Least K Greater Values
+// Problem Link - https://leetcode.com/problems/count-elements-with-at-least-k-greater-values/
+// Platform - LeetCode
 package LeetCode_Contest.Weekly_contest_478;
 import java.util.*;
 class Solution {
