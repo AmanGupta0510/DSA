@@ -57,7 +57,7 @@
       <li><code>linked-list/</code></li>
       <li>...and so forth</li>
     </ul>
-    <p>Example file naming: <code>0001-two-sum.java</code>, <code>0002-add-two-numbers.py</code>.</p>
+    <p>Example file naming: <code>twoSum.java</code>, <code>addTwoNumbers.java</code>.</p>
   </div>
 
   <div class="section">
