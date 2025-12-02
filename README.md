@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>LeetCode Solutions by Aman Raj Gupta</title>
-  <style>
+  <!-- <title>LeetCode Solutions by Aman Raj Gupta</title> -->
+  <!-- <style>
     body {
       font-family: Arial, sans-serif;
       line-height: 1.6;
@@ -33,7 +33,7 @@
     a:hover {
       text-decoration: underline;
     }
-  </style>
+  </style> -->
 </head>
 <body>
 
