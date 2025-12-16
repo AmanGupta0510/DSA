@@ -30,7 +30,7 @@ At last if our string contains the valid parantheses  then stack become empty if
 
 Time And Spacee Complexity:-
 Time - O(N)
-Space - O(N)
+Space - O(N) ...
 
  */
 
