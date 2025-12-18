@@ -2,7 +2,7 @@
 // Problem Link - https://leetcode.com/problems/combination-sum-ii/
 // Platform - LeetCode  
 
-package SubsequencesPattern;
+package RecursionAndBacktracking;
 import java.util.*;
 class Solution {
     public List<List<Integer>> combinationSum2(int[] candidates, int target) {
@@ -38,4 +38,4 @@ Time And Space Complexity :-
 Time Complexity - O(2^n)
 Space Complexity - O(n*k)
 
- */
+ *///thanku
