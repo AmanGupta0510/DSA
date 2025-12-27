@@ -44,12 +44,15 @@ The Appraoch we are using is BackTracking.
 
 The question is saying to find out all possible path in the matrix starting from 0 to n-1
 we can move (up,down,left,right) only if there is a free cell .
-
 we start finding all possible path by keeping in mind the constraint
-if we reach at n-1th index of the cell then we add the current path to the res and backtrack to find more such possible path.
+At each step, we try all valid moves from the current cell.For each valid move,
+we mark the cell as visited,append the move to the current path,
+and reursively continue exploring.
+If we reach at n-1th index of the cell then we add the current path to the res and backtrack to find more such possible path.
+
 After exploring all possible path our res contains all those path and we return that as our ans.
 
-Time Complexity - O(n*n * 4^k) where k is the number of cells present in the maze.
+Time Complexity - O(4^n^2) 
 Space Complexity - O(n*n).
 
 
