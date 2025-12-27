@@ -1,7 +1,7 @@
 /*
 Question_Name - M-Coloring Problem
 Problem_Link - https://www.geeksforgeeks.org/problems/m-coloring-problem-1587115620/1
-PlatForm - LeetCode
+PlatForm - GeeksForGeeks
 */
 
 package RecursionAndBacktracking;
