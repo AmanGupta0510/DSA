@@ -2,7 +2,7 @@
 // Problem Link - https://leetcode.com/problems/combination-sum-iii/
 // Platform - LeetCode
 
-package SubsequencesPattern;
+package RecursionAndBacktracking;
 import java.util.*;
 class Solution {
     public List<List<Integer>> combinationSum3(int k, int n) {

@@ -2,7 +2,7 @@
 // Problem Link - https://leetcode.com/problems/letter-combinations-of-a-phone-number/
 // Platform - LeetCode
 
-package SubsequencesPattern;
+package RecursionAndBacktracking;
 import java.util.*;
 class Solution {
 

@@ -1,7 +1,7 @@
 // Question - Subsets II
 // Problem Link - https://leetcode.com/problems/subsets-ii/
 // Platform - LeetCode
-package SubsequencesPattern;
+package RecursionAndBacktracking;
 import java.util.*;
 
 class Solution {

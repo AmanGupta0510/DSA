@@ -1,7 +1,7 @@
 // Question : Generate Parantheses
 // Problem link : https://leetcode.com/problems/generate-parentheses/
 // Platform : LeetCode
-package SubsequencesPattern;
+package RecursionAndBacktracking;
 import java.util.ArrayList; 
 class Solution {
     public ArrayList<String> generateParenthesis(int n) {

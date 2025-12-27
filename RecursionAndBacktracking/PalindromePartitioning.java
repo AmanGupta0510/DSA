@@ -1,7 +1,7 @@
 // Question - Palindrome Partitioning
 // Problem Link - https://leetcode.com/problems/palindrome-partitioning/
 
-package SubsequencesPattern;
+package RecursionAndBacktracking;
 import java.util.*;
 class Solution {
     public List<List<String>> partition(String s) {

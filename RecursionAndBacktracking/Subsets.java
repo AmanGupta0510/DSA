@@ -3,7 +3,7 @@
 // Platform - LeetCode
 
 
-package SubsequencesPattern;
+package RecursionAndBacktracking;
 import java.util.*;
 class Solution {
     public List<List<Integer>> subsets(int[] nums) {
@@ -58,4 +58,7 @@ Next considering 3, if not use it, we still have [ [ ], [1], [2], [1,2] ], if us
 Combine them, now we have [ [ ], [1], [2], [1,2], [3], [1,3], [2,3], [1,2,3] ]
 
 */
+
+// Longest Increasing Subsequence (LIS) - O(n^2) DP + O(n log n) Binary Search
+// Complete solution with detailed comments for interview prep
 
