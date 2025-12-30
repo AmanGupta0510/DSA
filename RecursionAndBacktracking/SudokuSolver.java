@@ -35,7 +35,7 @@ class Solution {
     private boolean valid(char[][] board,int r,int c,char ch){
         for(int i = 0;i<9;i++){
             if(board[i][c] == ch || board[r][i] == ch)return false;
-            if(board[3*(r/3)+i/3][3*(c/3)+i%3]==ch)return false;
+            if(board[3*(r/3)+i/3][3*(c/3)+i%3]==ch)return false; 
 
         }
         return true;
@@ -53,6 +53,7 @@ If our program return true then we straight away return true bcz we got our poss
 
 Time Complexity - O(N*N*9)
 Space Complexity - O(recursion stack)
+thank you 
 
 
 
