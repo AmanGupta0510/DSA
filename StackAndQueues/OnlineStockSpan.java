@@ -7,7 +7,7 @@ package StackAndQueues;
 
 import java.util.Stack;
 
-public class OnlineStockProblem {
+public class OnlineStockSpan {
     
    
 
