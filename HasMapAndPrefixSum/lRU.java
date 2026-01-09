@@ -1,3 +1,8 @@
+// Question_Name - LRU cache
+// Problem_Link - https://leetcode.com/problems/lru-cache/
+// PlatForm - LeetCode
+
+
 import java.util.HashMap;
 
 class LRUCache {
