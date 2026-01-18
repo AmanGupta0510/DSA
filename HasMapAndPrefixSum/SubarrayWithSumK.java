@@ -3,7 +3,7 @@
 // PlatForm - LeetCode
 
 
-package HasMapAndPrefixSum;
+
 
 import java.util.HashMap;
 
