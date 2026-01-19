@@ -1,0 +1,96 @@
+// Question_Name - Binary Subarrays With Sum
+// Problem_Link  - https://leetcode.com/problems/binary-subarrays-with-sum/
+// PlatForm - LeetCode 
+
+
+class Solution {
+    // public int numSubarraysWithSum(int[] nums, int goal) {
+        
+    //     HashMap<Integer,Integer> map = new HashMap<>();
+    //     int sum = 0;
+    //     map.put(0,1);
+    //     int ans = 0;
+    //     for(int i = 0;i<nums.length;i++){
+    //         sum+=nums[i];
+    //         if(map.containsKey(sum-goal)){
+    //             ans+=map.get(sum-goal);
+    //         }
+    //         if(map.containsKey(sum)){
+    //             map.put(sum,map.get(sum)+1);
+    //         }
+    //         else{
+    //             map.put(sum,1);
+    //         }
+            
+    //     }
+    //     return ans;
+
+    // }
+
+    public int numSubarraysWithSum(int[] nums, int goal) {
+
+        
+       
+      int x = getAtmost(nums,goal) ;
+      int y = getAtmost(nums,goal-1);
+      System.out.println(x+" "+y);
+      return x-y;
+
+
+    }
+    private int getAtmost(int[] nums,int k){
+        if(k<0)return 0;
+        int left = 0;
+        int right = 0;
+        int count = 0;
+        int sum = 0;
+        while(right<nums.length){
+            sum+=nums[right];
+            while(sum>k){
+                sum-=nums[left];
+                left++;
+            } 
+            count+=right-left+1;
+            right++;
+        } 
+        return count;
+    }
+}
+
+/*
+Explanation:
+Approach 1 (HashMap+preffixSum):
+The first approach is to keep track (val = sum-goal )which someHow acts as a boundary which indicate that 
+next to boundary to curr index sum is equals to the goal.
+ex: [1,0,1,0,1] k=2
+preffix sum: [1,1,2,2,3]
+              0 1 2 3 4
+                      |
+                    sum-goal(3-2) = 1 and 1's count is 2 in the preffix array so,we can say that from 
+                    (0th+1) to lstIndex there is a subarray whose sum is goal and form (1th+1) to lstIndex 
+                    there is another subarray with sum == goal.
+
+and for keeping track of preffix sum and its count will use a hashMap.
+Steps:
+1. calculate sum.
+2.if map.containsey(sum-goal),then add the count in the ans.
+3.if curr Sum is already present in the map then increment its count.
+4.put the sum in the map.
+
+Time Complexity - O(N)
+Space Complexity - O(N) as we use Hashmap.
+
+
+
+Appraoch 2 (Sliding Window):
+Here,we cant get an  answer if we use normal sliding window.
+why,bcz array contains 0 and 1 so it may be possible we get wrong or partial correct ans when the possible subarray is like [0,1,0,1] -> we get 1 subarray as our ans if normal subarray algo. applied here.
+so , in this case we can first get all subarray count whose sum<=goal
+    and all subarray whose sum<=goal-1.
+    return differences of both. by doing so we effectively removing subaarays whose sum is strictly less than goal.
+
+Time Complexity - O(n)
+Space Complexity - O(1)
+
+
+*/ 
