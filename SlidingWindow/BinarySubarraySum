@@ -61,7 +61,7 @@ class Solution {
 Explanation:
 Approach 1 (HashMap+preffixSum):
 The first approach is to keep track (val = sum-goal )which someHow acts as a boundary which indicate that 
-next to boundary to curr index sum is equals to the goal.
+If prefixSum[i] - prefixSum[j] = goal, then prefixSum[j] = prefixSum[i] - goal. We track how many times each prefix sum appeared before.
 ex: [1,0,1,0,1] k=2
 preffix sum: [1,1,2,2,3]
               0 1 2 3 4
