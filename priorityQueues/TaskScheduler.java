@@ -2,7 +2,10 @@
 // Problem_Link  - https://leetcode.com/problems/task-scheduler/
 // PlatForm - LeetCode  
 
+package PriorityQueues;
 
+
+import java.util.*;
 class Solution {
    
     public int leastInterval(char[] tasks, int n) {

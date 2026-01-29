@@ -2,7 +2,7 @@
 // Problem_Link   -  https://leetcode.com/problems/sort-an-array/
 // PlatForm - LeetCode
 
-package priorityQueues;
+package PriorityQueues;
 class Solution {
     // public int[] sortArray(int[] nums) {
         

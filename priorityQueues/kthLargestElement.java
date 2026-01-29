@@ -2,7 +2,7 @@
 // Problem_Link  - https://www.geeksforgeeks.org/problems/kth-largest-element5034/1
 // PlatForm      - GeeksForGeeks
 
-package priorityQueues;
+package PriorityQueues;
 class Solution {
     // Function to return kth largest element from an array.
     public static int KthLargest(int arr[], int k) {

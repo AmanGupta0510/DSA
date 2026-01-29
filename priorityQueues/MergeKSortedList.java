@@ -1,4 +1,4 @@
-package priorityQueues;
+package PriorityQueues;
 import java.util.PriorityQueue;
 
 class LinkedList<T>{

@@ -3,7 +3,7 @@
 // PlatForm - GeeksForGeeks
 
 
-package priorityQueues;
+package PriorityQueues;
 import java.util.HashMap;
 import java.util.PriorityQueue;
 
