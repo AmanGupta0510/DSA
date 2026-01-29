@@ -3,6 +3,9 @@
 // Platform  - GeeksForGeeks
 
 package PriorityQueues;
+
+import java.util.PriorityQueue;
+
 class Solution {
     public static int minCost(int[] arr) {
         // code here
