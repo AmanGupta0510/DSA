@@ -1,7 +1,13 @@
 // Question_Name - Design Twitter
 // Problem_Link  - https://leetcode.com/problems/design-twitter/
 // PlatForm - LeetCode
-
+package PriorityQueues;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.PriorityQueue;
+import java.util.Set;
 
 class Twitter {
     private class Pair{
