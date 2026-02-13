@@ -2,7 +2,7 @@
 // Problem_Link -  https://leetcode.com/problems/maximum-width-of-binary-tree/
 // PlatForm - LeetCode
 
-package BinarySearch;
+package BinaryTree;
 
 import java.util.ArrayList;
 import java.util.List;

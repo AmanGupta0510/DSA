@@ -2,7 +2,7 @@
 // Problem_Link - https://www.geeksforgeeks.org/problems/children-sum-parent/1
 // PlatForm - GeeksForGeeks
 
-package BinarySearch;
+package BinaryTree;
 
 public class ChildSumInABT {
 
