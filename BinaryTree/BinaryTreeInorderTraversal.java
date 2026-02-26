@@ -30,6 +30,35 @@ class Solution {
         List<Integer> res = new ArrayList<>();
         helper(root,res);
         return res;
+        // morris traversal binary tree threaded technique.
+
+        // List<Integer> res = new ArrayList<>();
+        // TreeNode curr = root;
+        // while(curr!=null){
+
+        //     if(curr.left==null){
+        //         res.add(curr.val);
+        //         curr=curr.right;
+        //     }
+        //     else{
+        //         TreeNode pred = curr.left;
+        //         while(pred.right!=null && pred.right!=curr){
+        //             pred = pred.right;   
+        //         }
+        //         if(pred.right==null){
+        //             pred.right = curr;
+        //             curr = curr.left;
+        //         }
+        //         else{
+        //             pred.right=null;
+        //             res.add(curr.val);
+        //             curr=curr.right;
+
+        //         }
+        //     }
+        // }
+        // return res;
+   
 
     }
     private void helper(TreeNode root,List<Integer> res){
