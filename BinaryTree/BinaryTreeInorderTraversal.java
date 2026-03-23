@@ -1,10 +1,16 @@
+// Question_Name  - Binary Tree Inorder Traversal
+// Problem_Link -   https://leetcode.com/problems/binary-tree-inorder-traversal/
+// PlatForm - LeetCode
+
+
 package BinaryTree;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class BinaryTreeInorderTraversal {
-    
+
+
+
     /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -20,52 +26,52 @@ public class BinaryTreeInorderTraversal {
  *     }
  * }
  */
-
-// Question_Name  - Binary Tree Inorder Traversal
-// Problem_Link -   https://leetcode.com/problems/binary-tree-inorder-traversal/
-// PlatForm - LeetCode
 class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {
-        
-        List<Integer> res = new ArrayList<>();
-        helper(root,res);
+        List<Integer> res = new ArrayList<>(); 
+        TreeNode curr = root;
+        while(curr!=null){
+            if(curr.left == null){
+                res.add(curr.val);
+                curr=curr.right;
+            }
+            else{
+                TreeNode pre = predecessor(curr);
+                if(pre.right==null){
+                    pre.right=curr;
+                    curr = curr.left;
+                }
+                else{
+                    pre.right = null;
+                    res.add(curr.val);
+                    curr = curr.right;
+                }
+            }
+        }
         return res;
-        // morris traversal binary tree threaded technique.
-
-        // List<Integer> res = new ArrayList<>();
-        // TreeNode curr = root;
-        // while(curr!=null){
-
-        //     if(curr.left==null){
-        //         res.add(curr.val);
-        //         curr=curr.right;
-        //     }
-        //     else{
-        //         TreeNode pred = curr.left;
-        //         while(pred.right!=null && pred.right!=curr){
-        //             pred = pred.right;   
-        //         }
-        //         if(pred.right==null){
-        //             pred.right = curr;
-        //             curr = curr.left;
-        //         }
-        //         else{
-        //             pred.right=null;
-        //             res.add(curr.val);
-        //             curr=curr.right;
-
-        //         }
-        //     }
-        // }
-        // return res;
-   
-
     }
-    private void helper(TreeNode root,List<Integer> res){
-        if(root==null)return;
-        helper(root.left,res);
-        res.add(root.val);
-        helper(root.right,res);
+    private TreeNode predecessor(TreeNode root){
+
+        if(root.left == null)return root;
+        TreeNode temp = root.left;
+        while(temp.right!=null && temp.right!=root){
+            temp=temp.right;
+        }
+        return temp;
     }
 }
-}
+
+/**
+Explanation
+We have multiple solution for this question like inorder  traversal using recursion and iterative traversal using stack but they takes O(N) extra space complexity.
+So, the morris traversal is the way or algorithm which can help to minimize the time from O(N) to O(1)
+
+Intuition
+1.for every node find its predecessor ( predecessor is the rightMost node of root.left substree)
+2. link the predecessor with the curr root node so that we can move back because in tree only downward movement is possible so we are creating link so that we can make an upward movement.
+3. see the code for clarification.
+
+Time Complexity - O(N)
+Space Complexity - O(1)
+
+ */ 
