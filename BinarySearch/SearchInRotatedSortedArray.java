@@ -33,7 +33,7 @@ public class SearchInRotatedSortedArray {
 Explanation :
 Approach 1 (BinarySearch):
 
-1. Apply a binary search in th array.
+1. Apply a binary search in the array.
 2. check if the mid element is the target if yes then straight away return the mid.
 3. if not then try to figure out which part is sorted [sI...mid] or [mid...eI]
    after figuirng out the sorted part figure out  the part where our ans can be found.
