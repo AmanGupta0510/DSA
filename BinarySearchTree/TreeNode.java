@@ -2,26 +2,26 @@
 // Problem_Link -   https://leetcode.com/problems/kth-smallest-element-in-a-bst/
 // Platform - LeetCode 
 
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
- */
+
+package BinarySearchTree ; 
+public class TreeNode {
+      int val;
+      TreeNode left;
+      TreeNode right;
+      TreeNode() {}
+      TreeNode(int val) { this.val = val; }
+      TreeNode(int val, TreeNode left, TreeNode right) {
+          this.val = val;
+          this.left = left;
+          this.right = right;
+      }
+}
+
 class Solution {
     int count;
     public int kthSmallest(TreeNode root, int k) {
         count=0;
-        int[] ans = new int[]{0};
+        // int[] ans = new int[]{0};
         // helper(root,k,ans);
         // return ans[0];
 
@@ -50,18 +50,18 @@ class Solution {
         }
         return -1;
     }
-    private void helper(TreeNode root,int k,int[] ans ){
+    // private void helper(TreeNode root,int k,int[] ans ){
 
-        if(root==null)return ;
+    //     if(root==null)return ;
        
-        helper(root.left,k,ans );
-        count+=1;
-        if(count==k){
-            ans[0] = root.val;
-            return;
-        }
-        helper(root.right,k,ans);
-    }
+    //     helper(root.left,k,ans );
+    //     count+=1;
+    //     if(count==k){
+    //         ans[0] = root.val;
+    //         return;
+    //     }
+    //     helper(root.right,k,ans);
+    // }
     private TreeNode findPredecessor(TreeNode root){
         if(root.left==null)return root;
         TreeNode curr = root.left;
