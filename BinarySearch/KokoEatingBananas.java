@@ -6,7 +6,6 @@ Problem_Link - https://leetcode.com/problems/koko-eating-bananas/
 PlatFrom - LeetCode
  */
 
-package BinarySearch;
 class Solution {
     public int minEatingSpeed(int[] piles, int h) {
        int sI = 1;

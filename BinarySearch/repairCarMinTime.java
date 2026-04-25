@@ -1,4 +1,4 @@
-package BinarySearch;
+
 
 public class repairCarMinTime {
     

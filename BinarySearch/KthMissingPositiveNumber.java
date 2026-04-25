@@ -3,7 +3,7 @@
 // Platform - Leetcode
 
 
-package BinarySearch;
+
 
 public class KthMissingPositiveNumber {
     
