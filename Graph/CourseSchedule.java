@@ -1,7 +1,11 @@
 // Question_Name - Course Schedule
 // Problem_link -  https://leetcode.com/problems/course-schedule/
 // Platform - Leetcode
+package Graph;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
 
 class Solution {
 
