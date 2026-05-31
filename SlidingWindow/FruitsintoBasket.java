@@ -39,7 +39,7 @@ Time_Complexity - O(N)
 Space_Complexity - O(N) using hashMap.
 
 Approach 2 : (Optimal without extra space)
-
+Use two variabels
 
 
 
