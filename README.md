@@ -37,12 +37,12 @@
 </head>
 <body>
 
-  <h1>LeetCode Solutions by Aman Raj Gupta</h1>
+  <h1>LeetCode Solutions by Aman Gupta</h1>
 
   <div class="section">
     <h2>About Me</h2>
     <p>
-      Hello! I'm <strong>Aman Raj Gupta</strong>, a computer science student and developer passionate about data structures, algorithms, and backend web development. 
+      Hello! I'm <strong>Aman Gupta</strong>, a computer science student and developer passionate about data structures, algorithms, and backend web development. 
       I solve LeetCode problems regularly and share my solutions here to track progress and help others learn.
     </p>
   </div>
