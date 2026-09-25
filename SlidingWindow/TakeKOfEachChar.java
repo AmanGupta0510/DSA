@@ -33,5 +33,7 @@ public class TakeKOfEachChar {
         return s.length()-ans;
 
     }
+
+    
 }
 
